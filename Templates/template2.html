@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Segundo</title>
+</head>
+<body>
+<input type="'text">
+<button>este es mi boton</button>
+<p style="color : blue ">Hola desde {{entidad}}, estas en la cursada {{cursada}}</p>
+la fecha en la que estamos corriendo el codigo es {{fecha}}<br>
+la lista ingresada es {{lista}}
+{% for numero in lista %}
+    <br> El numero es: {{numero}}
+{% endfor %}
+<br>
+Mi dicconario es {{diccionario}}
+{% for dato in diccionario %}
+    <br>{{dato}}
+{% endfor %}
+
+{% for key, value in diccionario.items %}
+    <br>{{key}}: {{value}}
+{% endfor %}
+<br><br>
+
+{% if cursada == "36" %}
+    <h1>Estas en la cursada correcta</h1>
+{%else %}
+    <h1>Estas en la cursada Incorrecta</h1>
+{% endif %}
+
+
+
+
+
+</body>
+</html>
